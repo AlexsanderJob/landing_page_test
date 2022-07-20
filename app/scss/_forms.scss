@@ -24,6 +24,10 @@ textarea {
 	border: 1px $black solid;
 	line-height: 1;
 	padding: 10px 15px;
+	@media screen and (max-width: 768px) {
+		font-size: 16px;
+		width: 250px;
+	}
 	&::placeholder {
 		color: #7d7d7d;
 	}
@@ -76,7 +80,7 @@ button,
 	@media screen and (max-width: $mobile) {
     	min-width: 1px;
 		max-width: 311px;
-		width: 100%;
+		font-size: 16px;
 	}
 
 	&.b-black {

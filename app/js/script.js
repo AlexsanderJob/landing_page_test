@@ -20,3 +20,16 @@ function plus () {
     }
 }
 plus();
+
+$('a[href^="#"]').on('click', function (e) {
+    let id = $(this).attr('href');
+    if (id !== "#" && $(id).length) {
+        e.preventDefault();
+        if ($(window).width() <= 1024 && $menu.length && $menu.is('.open')) {
+            $menu.slideUp();
+        }
+        $('html, body').stop(true).animate({
+            scrollTop: $(id).offset().top
+        }, 800);
+    }
+});

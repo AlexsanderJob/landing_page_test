@@ -17,6 +17,10 @@
         z-index: -1;
         left: -175px;
         transform: rotate(-105deg);
+        @media screen and (max-width: 768px) {
+          width: 300px;
+          height: 300px;
+        }
     }
     &:before {
         display: block;
@@ -29,6 +33,10 @@
         transform: rotate(-60deg);
         bottom: 140px;
         right: -170px;
+        @media screen and (max-width: 768px) {
+          width: 250px;
+          height: 250px;
+        }
     }
 
 
@@ -36,19 +44,34 @@
     margin: 0 auto;
     width: 490px;
     box-shadow: 0 16px 40px rgba(112, 144, 176, 0.2);
+    background: $white;
+    @media screen and (max-width: 768px) {
+      width: 300px;
+    }
 
     input {
       margin-bottom: 59px;
       box-shadow: 0 16px 40px rgba(112, 144, 176, 0.2);
+      @media screen and (max-width: 768px) {
+        margin-bottom: 25px;
+      }
     }
   }
 
   &-item {
     padding: 40px 0;
     font-size: 20px;
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+      padding: 20px 0;
+    }
   }
 
   .b-black {
-    margin-bottom: 58px;
+    margin: 20px 0 58px;
+    @media screen and (max-width: $mobile) {
+      margin: 20px 0;
+      padding: 10px;
+    }
   }
 }

@@ -3,9 +3,12 @@
   background-size: cover;
   padding: 205px 0 176px;
   color: $white;
+  @media screen and (max-width: 768px) {
+    padding: 120px 0 100px;
+  }
 
   &-content {
-    width: 559px;
+    max-width: 559px;
 
     h1 {
       text-transform: uppercase;
@@ -15,5 +18,16 @@
   &-item {
       margin-bottom: 120px;
       line-height: 2;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 30px;
+      line-height: 1.4;
+    }
+  }
+
+  &-btn {
+    @media screen and (max-width: 768px) {
+      width: 300px;
+      padding: 15px;
+    }
   }
 }
