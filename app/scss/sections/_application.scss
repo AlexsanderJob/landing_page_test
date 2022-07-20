@@ -1,0 +1,54 @@
+.application {
+  padding: 50px 0 101px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  @media screen and (max-width: 768px) {
+    padding: 20px 0 40px;
+  }
+    &:after {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        border: 1px $black dashed;
+        top: 85px;
+        z-index: -1;
+        left: -175px;
+        transform: rotate(-105deg);
+    }
+    &:before {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 430px;
+        height: 430px;
+        border: 1px $black dashed;
+        z-index: -1;
+        transform: rotate(-60deg);
+        bottom: 140px;
+        right: -170px;
+    }
+
+
+  &-form {
+    margin: 0 auto;
+    width: 490px;
+    box-shadow: 0 16px 40px rgba(112, 144, 176, 0.2);
+
+    input {
+      margin-bottom: 59px;
+      box-shadow: 0 16px 40px rgba(112, 144, 176, 0.2);
+    }
+  }
+
+  &-item {
+    padding: 40px 0;
+    font-size: 20px;
+  }
+
+  .b-black {
+    margin-bottom: 58px;
+  }
+}

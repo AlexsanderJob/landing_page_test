@@ -1,0 +1,11 @@
+@mixin content {
+  position: absolute;
+  content: "";
+  display: block;
+}
+
+@mixin calc($property, $expression) {
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}

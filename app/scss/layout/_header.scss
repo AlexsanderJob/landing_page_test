@@ -1,0 +1,42 @@
+.header {
+  padding: 27px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 30;
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-logo {
+    padding-right: 15px;
+  }
+
+  &-nav {
+    display: flex;
+    justify-content: flex-end;
+    ul {
+      margin-left: -31px;
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      align-items: center
+    }
+
+    li {
+      padding: 0 31px;
+    }
+    a {
+      text-decoration: none;
+      border-bottom: 1px $white transparent;
+      color: $white;
+      font-weight: 600;
+      &:hover {
+        border-bottom: 1px $white solid;
+      }
+    }
+  }
+}

@@ -1,0 +1,122 @@
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="date"],
+input[type="number"],
+input[type="week"],
+input[type="url"],
+input[type="tel"],
+select,
+textarea {
+	width: 372px;
+	outline: 0 none;
+	position: relative;
+	transition: all 0.3s;
+	color: $black;
+	text-align: left;
+	font-weight: 400;
+	font-family: $font;
+	font-size: 20px;
+	background-color: transparent;
+	text-transform: none;
+	border-radius: 20px;
+	border: 1px $black solid;
+	line-height: 1;
+	padding: 10px 15px;
+	&::placeholder {
+		color: #7d7d7d;
+	}
+
+	&[disabled],
+	&[disabled="disabled"] {
+		cursor: not-allowed;
+		background-color: #bdbdbd;
+	}
+}
+
+textarea {
+	resize: none;
+	overflow: auto;
+	white-space: normal;
+	min-height: 140px;
+	line-height: 1.2;
+}
+
+button,
+.btn {
+	outline: 0 none;
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	transition: all 0.3s;
+	letter-spacing: 0;
+	text-decoration: none !important;
+	border: none;
+	line-height: 1.23;
+	padding: 20px;
+	font-size: 20px;
+	min-width: 311px;
+	text-align: center;
+	background-color: $white;
+	font-weight: 600;
+	font-family: $font;
+	border-radius: 100px;
+	text-transform: none;
+	color: $black;
+	&:hover {
+		background: $black;
+		color: $white;
+		&:after {
+			border-top-color: $white;
+			border-right-color: $white;
+		}
+	}
+	@media screen and (max-width: $mobile) {
+    	min-width: 1px;
+		max-width: 311px;
+		width: 100%;
+	}
+
+	&.b-black {
+		border: 2px $black solid;
+		background: $black;
+		color: $white;
+		&:after {
+			border-top-color: $white;
+			border-right-color: $white;
+		}
+		&:hover {
+			background: $blackOne;
+			color: $white;
+			&:after {
+				border-top-color: $black;
+				border-right-color: $black;
+			}
+		}
+	}
+	&.b-arrow {
+		padding-right: 66px;
+		position: relative;
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 15px;
+			height: 15px;
+			transform: rotate(45deg);
+			border-top: 2px solid;
+			border-right: 2px solid;
+			top: 50%;
+			margin-top: -8px;
+			right: 32px;
+		}
+	}
+
+
+	&[disabled],
+	&[disabled="disabled"] {
+		cursor: not-allowed;
+	}
+}

@@ -1,0 +1,68 @@
+.footer {
+  background: url("../../img/footer_back.png") center center no-repeat;
+  background-size: cover;
+  padding: 30px 0 75px;
+  color: $white;
+  h3 {
+    margin-bottom: 46px;
+  }
+
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-social {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    a {
+      background-color: #3F4E4F;
+      text-align: center;
+      margin-left: 5px;
+      border-radius: 5px;
+      &:hover {
+        background-color: $blackOne;
+      }
+
+      img {
+        display: block;
+        margin: 5px;
+      }
+    }
+  }
+
+  &-address {
+    &:after {
+      background: url("../../img/social/location 7.png") center center no-repeat;
+    }
+  }
+
+  &-email {
+    &:after {
+      background: url("../../img/social/email.png") center center no-repeat;
+    }
+  }
+
+  &-phone {
+    &:after {
+      background: url("../../img/social/phone.png") center center no-repeat;
+    }
+  }
+}
+
+.item {
+  padding: 8px 0 22px 40px;
+  position: relative;
+  &:after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 31px;
+    left: 0;
+    top: 0;
+  }
+}
